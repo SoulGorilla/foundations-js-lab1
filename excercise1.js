@@ -18,10 +18,11 @@ var sentence1 = "More food please",
 exports.meerkatTalkOne = function() {
   var sentence = "More food please";
   var res = sentence.split(" ");
-    for (i=0; i<= res.length; i++) {
-    (res[i]= "chirp ");
-  }
-  var meerkatTalkOne = res;
+    for (i=0; i < res.length; i++) {
+    (res[i]= "chirp");
+    }
+  var meerkatTalkOne = res.join();
+  return meerkatTalkOne;
 
 };
 
@@ -30,10 +31,10 @@ exports.meerkatTalkTwo = function() {
   var bes = sentence.split(" ");
   var i = 0;
     while (i <= bes.length) {
-      (res[i] = " chirp ");
+      (res[i] = "chirp");
         i++;
     }
-  meerkatTalkTwo = bes;
-  return bes;
+  meerkatTalkTwo = bes.join();
+  return meerkatTalkTwo;
 };
 
